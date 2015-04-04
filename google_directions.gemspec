@@ -15,6 +15,6 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/joshcrews/google-directions-ruby'
   s.license     = 'MIT'
 
-  s.add_dependency 'nokogiri', '~> 1.4', '>= 1.4.1'
-  s.add_development_dependency 'mocha', '~>1.1', '>= 1.1.0'
+  s.add_runtime_dependency 'nokogiri', '~> 1.4'
+  s.add_development_dependency 'mocha', '~>1.1'
 end
