@@ -1,7 +1,7 @@
 # coding: utf-8
-#lib = File.expand_path('../lib', __FILE__)
-#$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-#require 'google_directions'
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'google_directions'
 
 Gem::Specification.new do |s|
   s.name        = 'google_directions'
@@ -14,7 +14,6 @@ Gem::Specification.new do |s|
   s.test_files  = s.files.grep(%r{^(test|spec|features)/})
   s.homepage    = 'https://github.com/joshcrews/google-directions-ruby'
   s.license     = 'MIT'
-  s.require_paths = ['lib']
 
   s.add_dependency 'nokogiri', '~> 1.4', '>= 1.4.1'
   s.add_development_dependency 'mocha', '~>1.1', '>= 1.1.0'
